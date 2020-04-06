@@ -11,7 +11,12 @@ In this project, we have written a bubble sort algorithm, split into two methods
 
 ## Getting start
 
-If you would like to test this the code locally you will need to have Ruby 2.6 up installed.
+In order to start with the project:
+
+1. You need to have ruby environment installed. [Click here for instructions](https://www.ruby-lang.org/en/documentation/installation/)
+2. Clone this repository `https://github.com/bertil291utn/bubble-sort-project.git`
+3. Run the algorithm file
+    - In a terminal window write `ruby `*`[your_file_path]`*`buble-sort-algorithm.rb`
 
 ## Authors
 
