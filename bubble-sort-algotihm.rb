@@ -20,3 +20,21 @@ end
 array = [2, 4, 200, 1, 9, 18, 20, 1]
 print "Original array #{array}\n "
 print "Sorted array#{bubble_sort(array)}"
+
+def bubble_sort_by(list)
+   length = list.length
+    list.select{ |value|
+    count = 0
+        while count+1 < length
+          condition = yield(list[count], list[count+1]) > 0 
+          condition ? (list[count], list[count+1] = list[count+1], list[count]) : nil
+            count +=1
+        end     
+    }
+    list
+end
+
+bubble_sort_by(["hi","hello","hey"]) do |right, left|
+    left.length - right.length
+end
+
