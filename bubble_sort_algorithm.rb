@@ -15,10 +15,6 @@ def bubble_sort(array)
   array
 end
 
-array = [2, 4, 200, 1, 9, 18, 20, 1]
-print "Original array #{array}\n "
-print "Sorted array#{bubble_sort(array)}"
-
 def bubble_sort_by(list)
   length = list.length
   list.select do
@@ -31,8 +27,3 @@ def bubble_sort_by(list)
   end
   list
 end
-
-array = bubble_sort_by(%w[hi hello hey]) do |left, right|
-  left.length - right.length
-end
-print array
